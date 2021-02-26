@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent" tools:context=".Ticket.TicketFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="9"/>
+
+    <Button
+        android:id="@+id/rollDice"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/recyclerView"
+        android:layout_gravity="center"
+        android:text="ROLL THE DICE"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+
+</FrameLayout>
